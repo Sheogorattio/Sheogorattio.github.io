@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+main{
+    padding-top: 2rem;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Poppins;
+    .order-section{
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        background: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+        .left-side{
+            p{
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 66px;
+            }
+            h3{
+                color: #03081F;
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 36px; /* 105.882% */
+            }
+            h3+h3{
+                color: #FC8A06;
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 36px; /* 105.882% */
+            }
+            .postcode-field{
+                font: inherit;
+                border-radius: 120px;
+                background: #FFF;
+                display: flex;
+                overflow: hidden;
+                height: 3rem;
+                input{
+                    border: none;
+                    margin-left: 1rem;
+                    width: 100%;
+                }
+                button{
+                    margin-left: auto;
+                    border-radius: 50%;
+                    width: 3rem;
+                    height: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    outline: none;
+                    background: #FC8A06;
+                    p{
+                        display: none;
+                    }
+                    span{
+                        margin: 3rem;
+                    }
+                }
+                button:hover{
+                    background: #aa600c;
+                }
+            }
+        }
+        .right-side{
+            display: none;
+        }
+    }
+    .food-type-selector{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+        ul{
+            font-weight: 400;
+            display: none;
+            align-items: center;
+            margin-left: auto;
+            li{
+                margin: 0 20px;
+            }
+            .selected-item{
+                
+                border-radius: 120px;
+                border: 1px solid #FC8A06;
+                padding: 1rem;
+                a{
+                    color: #FC8A06;
+                }
+            }
+        }
+        .type-dropdown{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-left: auto;
+            border: none;
+            background: #fff;
+            border-radius: 120px;
+            border: 1px solid #03081F;
+            padding: 0.8rem;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        a:hover{
+            color: #b96504;;
+        }
+    }
+    .restaurants-container {
+        height: 18rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        align-items: center;
+        overflow: auto;
+        .card{
+            display: flex;
+            position: relative;
+            .picture{
+                width: 14rem;
+                height: 12rem;
+                position: relative;
+                display: flex;
+                overflow: hidden;
+                border-radius: 12px;
+
+                img{
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .gradient{
+                    position:absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(246deg, rgba(255, 255, 255, 0.00) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%);
+                }
+                .discount{
+                    position:absolute;
+                    background: #000;
+                    color: #FFF;
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-left: 60%;
+                    border-radius: 0px 0px 12px 12px;
+                    p{  
+                        margin: 8px;
+                    }
+                }
+                .inner-text{
+                    display: none;
+                    position: absolute;
+                    margin-top: 21rem;
+                    margin-left: 3rem;
+                    p{
+                        color: #FC8A06;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    .name{
+                        color: #FFF;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                }
+            }
+           
+            .text{
+                position: absolute;
+                margin-top: 12rem;
+                p{
+                    color: #FC8A06;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .name{
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .popular{
+        margin-top: 1rem;
+        background: rgba(217, 217, 217, 0.50);
+        .dishes{
+            display: grid;
+            padding: 1rem;
+            gap: 1rem;
+            grid-template-columns: repeat(2,1fr);
+            .dish{
+                position: relative;
+                border-radius: 12px;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                background: #EFEFEF;
+                overflow: hidden;
+                display: flex;
+                height: 18rem;
+                img{
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 14rem;
+                    object-fit:cover;
+                }
+                .dish-text{
+                    position: absolute;
+                    margin-top: 14.5rem;
+                    margin-left: 1rem;
+                    font-family: Poppins;
+                    font-size: 13px;
+                    .title{
+                        color: #FC8A06;
+                        font-weight: 700;
+                    }
+                    .subtitle{
+                        color: #03081F;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .cards-holder{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        gap: 1rem;
+        width: 100%;
+        .mac-card{
+            color: #000;
+            font-family: Poppins;
+            outline: 1px red solid;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            background: #FDFDFD;
+            box-shadow: 5px 5px 34px 0px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            height: 15rem;
+            .mac-text{
+                margin: 1rem;
+                h3{
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 23px;
+                }
+                p{
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+                .price{
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+            .pic{
+                outline: 1px green solid;
+                position: relative;
+                border-radius: 12px;
+                background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+                overflow: hidden;
+                margin: 1rem;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit:cover;
+                }
+                .back{
+                    position: absolute; 
+                    border-radius: 0 0px 45px 0px;
+                    opacity: 0.9;
+                    background: #FFF;
+                    width: 4rem;
+                    height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    .cards-holder{
+        grid-template-columns: repeat(3,1fr) !important;
+        height: 30rem !important;
+        .mac-text{
+            h3{
+                font-size: 14px !important;
+            }
+        }
+    }
+    .dishes{
+        grid-template-columns: repeat(6, 1fr) !important; 
+    }   
+}
+
+@media (min-width: 722px){
+    .cards-holder{
+
+        height: 50rem !important;
+    }
+    .food-type-selector ul{
+        display: flex !important;
+    }
+    .type-dropdown{
+        display: none !important;
+    }
+
+    .text{
+        display: none !important;
+    }
+    .inner-text{
+        display: block !important;
+    }
+    .restaurants-container{
+        height: 30rem !important;
+    }
+    .picture{
+        margin-right: 1rem;
+        height: 28rem !important;
+        width: 38rem !important;
+    }
+    .discount{
+        font-size: 18px !important;
+        width: 6rem !important;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 80% !important;
+    }
+}
+
+@media (max-width: 320px){
+    .food-type-selector p{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,774 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.general-nav .additional-nav {
+  display: none;
+  height: 4em;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 0px 0px 12px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FAFAFA;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+.general-nav .additional-nav .promo {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.general-nav .additional-nav .promo u {
+  color: #FC8A06;
+}
+.general-nav .additional-nav .location {
+  font: inherit;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: auto;
+}
+.general-nav .additional-nav .location img {
+  display: block;
+  width: 2em;
+  margin-right: 0.1rem;
+}
+.general-nav .additional-nav .location a {
+  margin: 0 0.8rem;
+  text-decoration: underline;
+  color: #FC8A06;
+}
+.general-nav .additional-nav .location a:hover {
+  color: #aa600c;
+}
+.general-nav .additional-nav ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  border-radius: 0px 0px 12px 12px;
+  overflow: hidden;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+.general-nav .additional-nav ul button {
+  color: #FFF;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.general-nav .additional-nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #028643;
+}
+.general-nav .additional-nav ul li:hover {
+  background: #01582d;
+}
+.general-nav .top-nav {
+  display: flex;
+  width: 100%;
+  margin: 14px 0 0 0;
+}
+.general-nav .top-nav .main-logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 13px 0 0 0px;
+}
+.general-nav .top-nav .main-logo img {
+  display: block;
+  width: 100%;
+}
+.general-nav .top-nav .burger {
+  display: block;
+  align-self: center;
+  width: 22%;
+  margin-left: auto;
+}
+.general-nav .top-nav .burger img {
+  display: block;
+  width: 100%;
+}
+.general-nav .top-nav .full-menu {
+  display: none;
+  align-items: center;
+  margin-left: auto;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+}
+.general-nav .top-nav .full-menu li {
+  margin: 0 10px 0 10px;
+  display: block;
+}
+.general-nav .top-nav .full-menu a:hover {
+  color: #aa600c;
+}
+.general-nav .top-nav .full-menu .selected-item {
+  padding: 9px 34px;
+  border-radius: 120px;
+  background: #FC8A06;
+}
+.general-nav .top-nav .full-menu button {
+  border: none;
+  outline: none;
+  border-radius: 120px;
+  background: #03081F;
+  width: 10em;
+  color: #FFF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font: inherits;
+  font-size: 18px;
+}
+.general-nav .top-nav .full-menu button .profile-avatar {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 1em;
+  margin: 0.5em 0 0.5em 0;
+}
+.general-nav .top-nav .full-menu button .profile-avatar img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.general-nav .top-nav .full-menu button:hover {
+  background: rgb(6, 49, 6);
+}
+.general-nav .second-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 4.5em;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+.general-nav .second-nav .login {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  background: #FC8A06;
+  color: #000;
+  font: inherit;
+}
+.general-nav .second-nav .login .profile-avatar {
+  display: flex;
+  width: 3em;
+  height: 3em;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.general-nav .second-nav .login .profile-avatar img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.general-nav .second-nav .login:hover {
+  background: #aa600c;
+}
+.general-nav .second-nav .shopping-cart {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #028643;
+  border-style: none;
+  color: #fff;
+  font: inherit;
+}
+.general-nav .second-nav .shopping-cart span {
+  font-size: 2.8rem;
+  margin-right: 1rem;
+}
+.general-nav .second-nav .shopping-cart:hover {
+  background: #026634;
+}
+.general-nav .small-location {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: end;
+}
+.general-nav .small-location img {
+  display: block;
+  width: 2em;
+  margin-right: 0.1rem;
+}
+
+@media (max-width: 1175px) {
+  .location {
+    font-size: 12px !important;
+  }
+  .promo {
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    margin: 0 2em;
+  }
+  .small-location {
+    display: none !important;
+  }
+  .additional-nav {
+    display: flex !important;
+  }
+  .full-menu {
+    display: flex !important;
+  }
+  .burger {
+    display: none !important;
+  }
+  .main-logo {
+    width: 20em !important;
+  }
+  .second-nav {
+    display: none !important;
+  }
+}
+@media (min-width: 400px) {
+  .burger {
+    width: 16% !important;
+  }
+}
+main {
+  padding-top: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Poppins;
+}
+main .order-section {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #E2E2E2;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+main .order-section .left-side p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 66px;
+}
+main .order-section .left-side h3 {
+  color: #03081F;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 36px; /* 105.882% */
+}
+main .order-section .left-side h3 + h3 {
+  color: #FC8A06;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 36px; /* 105.882% */
+}
+main .order-section .left-side .postcode-field {
+  font: inherit;
+  border-radius: 120px;
+  background: #FFF;
+  display: flex;
+  overflow: hidden;
+  height: 3rem;
+}
+main .order-section .left-side .postcode-field input {
+  border: none;
+  margin-left: 1rem;
+  width: 100%;
+}
+main .order-section .left-side .postcode-field button {
+  margin-left: auto;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background: #FC8A06;
+}
+main .order-section .left-side .postcode-field button p {
+  display: none;
+}
+main .order-section .left-side .postcode-field button span {
+  margin: 3rem;
+}
+main .order-section .left-side .postcode-field button:hover {
+  background: #aa600c;
+}
+main .order-section .right-side {
+  display: none;
+}
+main .food-type-selector {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .food-type-selector ul {
+  font-weight: 400;
+  display: none;
+  align-items: center;
+  margin-left: auto;
+}
+main .food-type-selector ul li {
+  margin: 0 20px;
+}
+main .food-type-selector ul .selected-item {
+  border-radius: 120px;
+  border: 1px solid #FC8A06;
+  padding: 1rem;
+}
+main .food-type-selector ul .selected-item a {
+  color: #FC8A06;
+}
+main .food-type-selector .type-dropdown {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  border: none;
+  background: #fff;
+  border-radius: 120px;
+  border: 1px solid #03081F;
+  padding: 0.8rem;
+  font-size: 12px;
+  font-weight: 400;
+}
+main .food-type-selector a:hover {
+  color: #b96504;
+}
+main .restaurants-container {
+  height: 18rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  overflow: auto;
+}
+main .restaurants-container .card {
+  display: flex;
+  position: relative;
+}
+main .restaurants-container .card .picture {
+  width: 14rem;
+  height: 12rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+}
+main .restaurants-container .card .picture img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .restaurants-container .card .picture .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(246deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%);
+}
+main .restaurants-container .card .picture .discount {
+  position: absolute;
+  background: #000;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 60%;
+  border-radius: 0px 0px 12px 12px;
+}
+main .restaurants-container .card .picture .discount p {
+  margin: 8px;
+}
+main .restaurants-container .card .picture .inner-text {
+  display: none;
+  position: absolute;
+  margin-top: 21rem;
+  margin-left: 3rem;
+}
+main .restaurants-container .card .picture .inner-text p {
+  color: #FC8A06;
+  font-size: 18px;
+  font-weight: 500;
+}
+main .restaurants-container .card .picture .inner-text .name {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+main .restaurants-container .card .text {
+  position: absolute;
+  margin-top: 12rem;
+}
+main .restaurants-container .card .text p {
+  color: #FC8A06;
+  font-size: 18px;
+  font-weight: 500;
+}
+main .restaurants-container .card .text .name {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+main .popular {
+  margin-top: 1rem;
+  background: rgba(217, 217, 217, 0.5);
+}
+main .popular .dishes {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .popular .dishes .dish {
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #EFEFEF;
+  overflow: hidden;
+  display: flex;
+  height: 18rem;
+}
+main .popular .dishes .dish img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .popular .dishes .dish .dish-text {
+  position: absolute;
+  margin-top: 14.5rem;
+  margin-left: 1rem;
+  font-family: Poppins;
+  font-size: 13px;
+}
+main .popular .dishes .dish .dish-text .title {
+  color: #FC8A06;
+  font-weight: 700;
+}
+main .popular .dishes .dish .dish-text .subtitle {
+  color: #03081F;
+  font-weight: 400;
+}
+main .cards-holder {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+main .cards-holder .mac-card {
+  color: #000;
+  font-family: Poppins;
+  outline: 1px red solid;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FDFDFD;
+  box-shadow: 5px 5px 34px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  height: 15rem;
+}
+main .cards-holder .mac-card .mac-text {
+  margin: 1rem;
+}
+main .cards-holder .mac-card .mac-text h3 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+}
+main .cards-holder .mac-card .mac-text p {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+main .cards-holder .mac-card .mac-text .price {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+main .cards-holder .mac-card .pic {
+  outline: 1px green solid;
+  position: relative;
+  border-radius: 12px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  overflow: hidden;
+  margin: 1rem;
+}
+main .cards-holder .mac-card .pic img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .cards-holder .mac-card .pic .back {
+  position: absolute;
+  border-radius: 0 0px 45px 0px;
+  opacity: 0.9;
+  background: #FFF;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .cards-holder {
+    grid-template-columns: repeat(3, 1fr) !important;
+    height: 30rem !important;
+  }
+  .cards-holder .mac-text h3 {
+    font-size: 14px !important;
+  }
+  .dishes {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+}
+@media (min-width: 722px) {
+  .cards-holder {
+    height: 50rem !important;
+  }
+  .food-type-selector ul {
+    display: flex !important;
+  }
+  .type-dropdown {
+    display: none !important;
+  }
+  .text {
+    display: none !important;
+  }
+  .inner-text {
+    display: block !important;
+  }
+  .restaurants-container {
+    height: 30rem !important;
+  }
+  .picture {
+    margin-right: 1rem;
+    height: 28rem !important;
+    width: 38rem !important;
+  }
+  .discount {
+    font-size: 18px !important;
+    width: 6rem !important;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80% !important;
+  }
+}
+@media (max-width: 320px) {
+  .food-type-selector p {
+    font-size: 14px;
+  }
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  font-family: Poppins;
+  margin: 4rem 0.5rem 0 0.5rem;
+  width: 100%;
+}
+footer .download-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .download-buttons .main-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 3rem;
+}
+footer .download-buttons .main-logo img {
+  display: block;
+  width: 100%;
+}
+footer .download-buttons .market-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0.2rem 0 0.2rem;
+}
+footer .download-buttons .market-links a img {
+  display: block;
+  width: 100%;
+}
+footer .download-buttons p {
+  margin-top: 1rem;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+footer .subscription {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .subscription h3 {
+  color: #03081F;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 43px;
+}
+footer .subscription .subscribe {
+  margin-top: 1rem;
+  height: 4rem;
+  border-radius: 120px;
+  background: #D9D9D9;
+  display: flex;
+}
+footer .subscription .subscribe input {
+  width: 100%;
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+footer .subscription .subscribe button {
+  padding: 0 3rem;
+  margin-left: auto;
+  border: none;
+  border-radius: 120px;
+  background: #FC8A06;
+  height: 100%;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+footer .subscription .subscribe button:hover {
+  background: #cc6e03;
+}
+footer .subscription .policy {
+  margin-top: 0.2rem;
+  color: #03081F;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 43px;
+}
+footer .subscription .policy a {
+  text-decoration: underline;
+}
+footer .subscription .media {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .subscription .media img {
+  display: block;
+  width: 4rem;
+}
+footer .links {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .links .footer-menu {
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+footer .links .footer-menu h3 {
+  color: #03081F;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 43px;
+}
+footer .links .footer-menu ul li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 33px;
+  text-decoration: underline;
+}
+footer .links .footer-menu ul li a:hover {
+  color: #FC8A06;
+}
+footer a:hover {
+  color: #FC8A06;
+}
+
+.bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: Poppins;
+  width: 100%;
+  background: #03081F;
+  padding: 2rem;
+}
+.bottom p {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (min-width: 1100px) {
+  footer {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .footer-menu {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .links {
+    justify-content: top !important;
+  }
+}/*# sourceMappingURL=style.css.map */

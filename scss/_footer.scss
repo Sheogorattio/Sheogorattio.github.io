@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font-family: Poppins;
+    margin: 4rem 0.5rem 0 0.5rem;
+    width: 100%;
+    .download-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .main-logo{
+            display: flex;
+            justify-content: center;
+            margin: 0 3rem;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .market-links{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0.2rem 0 0.2rem;
+            a{
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        p{
+            margin-top: 1rem;
+            color: #000;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+    .subscription{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            color: #03081F;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 43px;
+        }
+        .subscribe{
+            margin-top: 1rem;
+            height: 4rem;
+            border-radius: 120px;
+            background: #D9D9D9;
+            display: flex;
+            input{
+                width: 100%;
+                margin-left: 1rem;
+                background: transparent;
+                border: none;
+                outline:  none;
+            }
+            button{
+                padding: 0 3rem;
+                margin-left: auto;
+                border: none;
+                border-radius: 120px;
+                background: #FC8A06;
+                height: 100%;
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            button:hover{
+                background: #cc6e03;
+            }
+        }
+        .policy{
+            margin-top: 0.2rem;
+            color: #03081F;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 43px; 
+            a{
+                text-decoration: underline;
+            }
+        }
+        .media{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            img{
+                display: block;
+                width: 4rem;
+            }
+        }
+    }
+    .links{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .footer-menu{
+            margin-top: 1rem;
+            width: 100%;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(1,1fr);
+            h3{
+                color: #03081F;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 43px;
+            }
+            ul{
+                li{
+                    a{
+                        color: #000;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 33px;
+                        text-decoration: underline;
+                    }
+                    a:hover{
+                        color:#FC8A06;;
+                    }
+                }
+            }
+        }
+    }
+    a:hover{
+        color:#FC8A06;;
+    }
+}
+.bottom{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: Poppins;
+    width: 100%;
+    background: #03081F;
+    padding: 2rem;
+    p{
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1100px){
+    footer{
+        grid-template-columns: repeat(3,1fr) !important;
+    }
+    .footer-menu{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    .links{
+        justify-content: top !important;
+    }
+}

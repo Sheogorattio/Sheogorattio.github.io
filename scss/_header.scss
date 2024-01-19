@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+.general-nav{
+    .additional-nav{
+        display: none;
+        height: 4em;
+        align-items: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 0px 0px 12px 12px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        background: #FAFAFA;
+        overflow: hidden;
+        padding-left: 1rem;
+        .promo{
+            display: flex;
+            align-items: center;
+            color: #000;
+            u{
+                color: #FC8A06;
+            }
+        }
+        .location{
+            font: inherit;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-left: auto;
+            img{
+                display: block;
+                width: 2em;
+                margin-right: 0.1rem;
+            }
+            a{
+                margin: 0 0.8rem;
+                text-decoration: underline;
+                color: #FC8A06;
+            }
+            a:hover{
+                color: #aa600c;
+            }
+        }
+        ul{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            border-radius: 0px 0px 12px 12px;
+            overflow: hidden;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            button{
+                color: #FFF;
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+                height: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                background: #028643;
+            }
+            li:hover{
+                background: #01582d;
+            }
+        }
+    }
+    .top-nav{
+        display: flex;
+        width: 100%;
+        margin: 14px 0 0 0;
+        .main-logo{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            margin: 13px 0 0 0px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .burger{
+            display: block;
+            align-self: center;
+            width: 22%;
+            margin-left: auto;
+            img{       
+                display: block;
+                width: 100%;
+            }
+        }
+        .full-menu{
+            display: none;
+            align-items: center;
+            margin-left: auto;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            li{
+                margin: 0 10px 0 10px;
+                display: block;
+            }
+            a:hover{
+                color: #aa600c;
+            }
+            .selected-item{
+                padding: 9px 34px;
+                border-radius: 120px;
+                background: #FC8A06;
+            }
+            button{
+                border: none;
+                outline: none;
+                border-radius: 120px;
+                background: #03081F;
+                width: 10em;
+                color: #FFF;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font:inherits;
+                font-size: 18px;
+                .profile-avatar{
+                    display: flex;
+                    width: 3rem;
+                    height: 3rem;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    margin-right: 1em;
+                    margin: 0.5em 0 0.5em 0;
+                    img{
+                        display: block;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            button:hover{
+                background: rgb(6, 49, 6);
+            }
+        }
+    }
+    .second-nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 4.5em;
+      
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+
+        .login{
+        
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            border-style: none;
+            background: #FC8A06;
+            color: #000;
+            font: inherit;
+            .profile-avatar{
+                display: flex;
+                width: 3em;
+                height: 3em;
+                overflow: hidden;
+                border-radius: 50%;
+                margin-right: 1em;
+                img{
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .login:hover{
+            background: #aa600c;
+        }
+        .shopping-cart{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            background: #028643;
+            border-style: none;
+            color: #fff;
+            font: inherit;         
+            span{
+                font-size: 2.8rem;
+                margin-right: 1rem;
+            }
+        }
+        .shopping-cart:hover{
+            background: #026634;
+        }
+    }
+    .small-location{
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: end;
+        img{
+            display: block;
+            width: 2em;
+            margin-right: 0.1rem;
+        }
+    }
+}
+
+@media (max-width: 1175px){
+    .location{
+        font-size: 12px !important;
+    }
+    .promo{
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    body{
+        margin: 0 2em;
+    }
+    .small-location{
+        display: none !important;
+    }
+    .additional-nav{
+        display: flex !important;
+    }
+    .full-menu{
+        display: flex !important;
+    }
+    .burger{
+        display: none !important;
+    }
+    .main-logo{
+        width: 20em !important; 
+    }
+    .second-nav{
+        display: none !important;
+    }
+}
+
+@media (min-width: 400px){
+    .burger{
+        width: 16% !important;
+    }
+}
