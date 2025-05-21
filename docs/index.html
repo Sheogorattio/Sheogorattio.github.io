@@ -1,14 +1,33 @@
+<h2>Реєстрація</h2>
+  <form id="register-form">
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="date" id="birthDate" required><br>
+
+    <label for="country">Країна:</label>
+    <select id="country" required></select><br>
+
+    <label for="city">Місто:</label>
+    <select id="city" required></select><br>
+
+    <button type="submit">Зареєструватися</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./register.js"></script>
+
 <h3>LOGIN</h3>
-<input type="text" id="username" placeholder="login">
+<input type="text" id="usernameLog" placeholder="login">
 <br>
-<input type="password" id="password" placeholder="password">
+<input type="password" id="passwordLog" placeholder="password">
 <button onclick="login()">Login</button>
 <br>
 
 <script>
   async function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const username = document.getElementById("usernameLog").value;
+    const password = document.getElementById("passwordLog").value;
 
     try {
       const response = await axios.post("https://lumituneapp.azurewebsites.net/auth/login", {
