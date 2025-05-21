@@ -38,7 +38,7 @@
     formData.append("file", file);
 
     try {
-      const response = await axios.post("https://lumituneapp.azurewebsites.net/images/api/upload", formData, {
+      const response = await axios.post("https://lumituneapp.azurewebsites.net/images/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data"
         },
@@ -58,7 +58,7 @@
     const password = document.getElementById("password").value;
 
     try {
-      const response = await axios.get("https://lumituneapp.azurewebsites.net/api/users/all", {
+      const response = await axios.get("https://lumituneapp.azurewebsites.net/users/all", {
         headers: {
           "Content-Type": "application/json"
         },
@@ -75,7 +75,7 @@
 <script>
   async function getAdmin() {
     try {
-      const response = await axios.get("https://lumituneapp.azurewebsites.net/api/users/username/admin", {
+      const response = await axios.get("https://lumituneapp.azurewebsites.net/users/username/admin", {
         headers: {
           "Content-Type": "application/json"
         },
